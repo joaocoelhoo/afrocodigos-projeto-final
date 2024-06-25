@@ -1,0 +1,14 @@
+<div>
+  <input
+    type="text"
+    placeholder="Insira nome do funcionário"
+    [(ngModel)]="employee.name"
+  />
+  <input
+  type="text"
+  placeholder="Insira o cargo do funcionário"
+  [(ngModel)]="employee.position"
+/>
+<button (click)="register()">Cadastrar</button>
+</div>
+<router-outlet></router-outlet>

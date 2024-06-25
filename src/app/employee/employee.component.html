@@ -1,0 +1,12 @@
+<div class="employee">
+    <h1>Lista de Colaboradores</h1>
+    <ul>
+        <li *ngFor="let employee of employees">
+            {{ employee.name }} - {{ employee.position }}
+            <button (click)="deleteEmployee(employee.id)">Deletar</button>
+            <button [routerLink]="['/editar', employee]">Editar</button>
+        </li>
+        <button [routerLink]="['/form']">Adicionar Colaborador</button>
+    </ul>
+</div>
+<router-outlet></router-outlet>
